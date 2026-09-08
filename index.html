@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- CORREÇÃO: "htm" alterado para "html" -->
+<html lang="en"> <!-- CORREÇÃO: "lan" alterado para "lang" -->
+<head>
+    <meta charset="UTF-8">
+    <title>Portal do Aluno</title>
+    <!-- ERRO anterior: faltou o ">" de fechamento do codigo. Correção: Foi colocado > para fechar o codigo -->
+    <!-- CORREÇÃO: "styles" alterado para "stylesheet" para o navegador carregar o CSS corretamente -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body> <!-- CORREÇÃO: "bod" alterado para "body" -->
+    <header>
+        <h1>Bem-vindo ao Portal do Aluno</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li> <!-- ERRO anterior: Faltou o </a>. CORREÇÃO: foi adicionado o </a>. -->
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li> <!-- CORREÇÃO: A tag de fechamento estava duplicada como <li> em vez de </li> -->
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Nossos Cursos</h2> <!-- CORREÇÃO: Modificado </h3> para </h2> para fechar corretamente a tag de abertura -->
+            <p class="destaques">Conheça os melhores cursos técnicos da região.</p> <!-- CORREÇÃO: Modificado o último <p> para </p> para fechar a tag -->
+            <!-- ERRO anterior: Faltou o "=" e o espaço entre os codigos. CORREÇÃO: foi adicionado o "=" e dado o espaço -->
+            <img src="curso.jpg" alt="Curso de desenvolvimento">
+        </section>
+        
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma escola técnica com <strong> mais de 10 anos </strong> de experiência no mercado. </p> <!-- ERRO anterior: Faltava o ">" para fechar o </strong>. CORREÇÃO: Foi adicionado o ">". -->
+        </section>
+        
+        <section id="cursos">
+            <h2>Lista de Cursos</h2>
+            <ul>
+                <li>Desenvolvimento de Sistemas</li> <!--ERRO anterior: Estava sem o </li>. CORREÇÃO: Foi adicionado o </li>. -->
+                <li>Redes de Computadores</li>
+                <li>Administração</li>
+            </ul>
+        </section>
+        
+        <section id="contato"> <!-- CORREÇÃO: Abertura da tag corrigida. O ID deve ficar dentro da tag section: <section id="contato"> -->
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                
+                <button type="submit">Enviar</button> <!-- CORREÇÃO: Modificado a tag de fechamento de <button> para </button> -->
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Escola Técnica. Todos os direitos reservados.</p> <!-- CORREÇÃO: Adicionado ponto e vírgula em &copy; para exibir o símbolo de copyright corretamente -->
+    </footer>
+</body>
+</html>
